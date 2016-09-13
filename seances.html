@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+	<title>seances</title>
+	<link rel="stylesheet" type="text/css" href="seances.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="seances.js"></script>
+</head>
+<body ng-app="app">
+	<script src="seances.js"></script>
+	<!--<div id="top" class="center">
+		<a id="logo" href="https://www.polymtl.ca">
+			<img src="logopoly.gif" alt="Logo Polytechnique">
+		</a>
+		<div id="gentitle">
+			<div id="title">LOG2420, Analyse et conception d'interfaces utilisateurs</div><br>
+			<div id="subtitle">Automne 2016</div>
+			
+			
+
+		</div>
+		
+		<div id="topmenu">
+			<a id="printable">
+				<img src="printer.png"></img>
+				version imprimable
+			</a>
+		</div>
+
+	</div>
+	<bl></bl>
+	
+	<div id="menu">
+		
+	</div>-->
+
+	<div id="table">
+		<table ng-controller="seancesCrtl">
+			<tr>
+				<th>Semaines</th>
+				<th>Transparents</th>
+				<th>Documents</th>
+				<th>Évaluations</th>
+			</tr>
+			<tr ng-repeat="val in seances">
+				<td>{{val.date}}</td>
+				<td>{{val.transparents}}</td>
+				<td>{{val.documents}}</td>
+				<td>{{val.evaluations}}</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

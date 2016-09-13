@@ -1,0 +1,43 @@
+body{
+  color: midnightblue;
+}
+#logo{
+  float: left;
+}
+#top{
+  position: absolute;
+  background-image: url("backtop.jpg");
+  height: 78px;
+}
+#gentitle{
+  font-family: "Verdana,Arial,sans-serif";
+  line-height: 50%;
+  margin-left: 113px;
+  font-size: medium;
+}
+#title{
+  font-size: 150%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+#subtitle{
+  margin-top: 5px;
+  margin-bottom:10px;
+
+}
+#topmenu{
+  float:right;
+  width:65px;
+  line-height: 50%;
+}
+#menu{
+ float:left;
+ width:102px;
+}
+#table{
+ float:right;
+}
+.center {
+    width: 100%;
+    padding: 10px;
+}
