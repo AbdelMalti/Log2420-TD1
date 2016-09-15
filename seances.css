@@ -8,6 +8,8 @@ body{
   position: absolute;
   background-image: url("backtop.jpg");
   height: 78px;
+  width: 70%;
+  padding: 10px;
 }
 #gentitle{
   font-family: "Verdana,Arial,sans-serif";
@@ -36,8 +38,4 @@ body{
 }
 #table{
  float:right;
-}
-.center {
-    width: 100%;
-    padding: 10px;
 }

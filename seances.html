@@ -1,22 +1,21 @@
 <!DOCTYPE html>
+<html>
 <head>
+	<meta charset="utf-8"></meta>
 	<title>seances</title>
 	<link rel="stylesheet" type="text/css" href="seances.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script src="seances.js"></script>
 </head>
 <body ng-app="app">
-	<script src="seances.js"></script>
-	<!--<div id="top" class="center">
+	<!--<div id="top">
 		<a id="logo" href="https://www.polymtl.ca">
 			<img src="logopoly.gif" alt="Logo Polytechnique">
 		</a>
+		
 		<div id="gentitle">
 			<div id="title">LOG2420, Analyse et conception d'interfaces utilisateurs</div><br>
 			<div id="subtitle">Automne 2016</div>
-			
-			
-
 		</div>
 		
 		<div id="topmenu">
@@ -26,15 +25,18 @@
 			</a>
 		</div>
 
-	</div>
-	<bl></bl>
-	
-	<div id="menu">
-		
 	</div>-->
+	
+	<div id="menu" ng-controller="menuCtrl">
+      <ul id="menu">
+        <li ng-repeat="o in menu">
+          <a href="{{o.Navigation.lien}}">{{o.Navigation.nom}}</a>
+        </li>
+      </ul>
+	</div>
 
-	<div id="table">
-		<table ng-controller="seancesCrtl">
+	<!--<div id="table" class="center" ng-controller="seancesCtrl">
+		<table>
 			<tr>
 				<th>Semaines</th>
 				<th>Transparents</th>
@@ -42,12 +44,12 @@
 				<th>Évaluations</th>
 			</tr>
 			<tr ng-repeat="val in seances">
-				<td>{{val.date}}</td>
-				<td>{{val.transparents}}</td>
-				<td>{{val.documents}}</td>
-				<td>{{val.evaluations}}</td>
+				<td ng-bind-html="val.date"></td>
+				<td ng-bind-html="val.transparents"></td>
+				<td ng-bind-html="val.documents"></td>
+				<td ng-bind-html="val.evaluations"></td>
 			</tr>
 		</table>
-	</div>
+	</div>-->
 </body>
 </html>
