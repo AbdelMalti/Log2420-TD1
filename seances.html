@@ -31,7 +31,8 @@
 		<div id="menu" ng-controller="menuCtrl">
 	      <ul>
 	        <li ng-repeat="o in menu">
-	          <a href="{{o.lien}}">{{o.nom}}</a>
+	        <!--o.lien et o.Lien ne font pas la meme chose... so damn case sensitive this javascript XD!-->
+	          <a href="{{o.Lien}}">{{o.Nom}}</a>
 	        </li>
 	      </ul>
 		</div>
