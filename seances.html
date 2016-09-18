@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8"></meta>
 	<title>seances</title>
-	<link rel="stylesheet" type="text/css" href="seances.css">
+	<!--link rel="stylesheet" type="text/css" href="seances.css"-->
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script src="seances.js"></script>
 </head>
@@ -27,30 +27,31 @@
 		</div>
 
 	</div>
-	
-	<div id="menu" ng-controller="menuCtrl">
-      <ul id="menu">
-        <li ng-repeat="o in menu">
-          <a href="{{o.Navigation.lien}}">{{o.Navigation.nom}}</a>
-        </li>
-      </ul>
-	</div>
+	<div>
+		<div id="menu" ng-controller="menuCtrl">
+	      <ul>
+	        <li ng-repeat="o in menu">
+	          <a href="{{o.lien}}">{{o.nom}}</a>
+	        </li>
+	      </ul>
+		</div>
 
-	<div id="table" class="center" ng-controller="seancesCtrl">
-		<table>
-			<tr>
-				<th>Semaines</th>
-				<th>Transparents</th>
-				<th>Documents</th>
-				<th>Évaluations</th>
-			</tr>
-			<tr ng-repeat="val in seances">
-				<td ng-bind-html="val.date"></td>
-				<td ng-bind-html="val.transparents"></td>
-				<td ng-bind-html="val.documents"></td>
-				<td ng-bind-html="val.evaluations"></td>
-			</tr>
-		</table>
+		<div id="table" class="center" ng-controller="seancesCtrl">
+			<table>
+				<tr>
+					<th>Semaines</th>
+					<th>Transparents</th>
+					<th>Documents</th>
+					<th>Évaluations</th>
+				</tr>
+				<tr ng-repeat="val in seances">
+					<td ng-bind-html="val.date"></td>
+					<td ng-bind-html="val.transparents"></td>
+					<td ng-bind-html="val.documents"></td>
+					<td ng-bind-html="val.evaluations"></td>
+				</tr>
+			</table>
+		</div>
 	</div>
 </body>
 </html>
