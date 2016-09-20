@@ -4,8 +4,9 @@
 <head>
 	<meta charset="utf-8"></meta>
 	<title>seances</title>
-	<!--link rel="stylesheet" type="text/css" href="seances.css"-->
+	<link rel="stylesheet" type="text/css" href="seances.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="seances.js"></script>
 </head>
 <body ng-app="app">
@@ -20,14 +21,14 @@
 		</div>
 		
 		<div id="topmenu">
-			<a id="printable">
+			<a id="print" href="">
 				<img src="printer.png"></img>
 				version imprimable
 			</a>
 		</div>
 
 	</div>
-	<div>
+	<div ID = "bottom">
 		<div id="menu" ng-controller="menuCtrl">
 	      <ul>
 	        <li ng-repeat="o in menu">
