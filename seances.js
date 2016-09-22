@@ -15,3 +15,9 @@ app.controller('menuCtrl', function($scope, $http) {
         $scope.menu = response.data.Navigation; //menu va directement contenir tout ce qu'il y a dans le fichier json.
     });
 });
+
+$( document ).ready(function(){
+	$("#print").click(function(){
+		$("#menu").hide();
+	});
+});

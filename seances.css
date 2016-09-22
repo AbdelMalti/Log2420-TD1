@@ -1,17 +1,17 @@
+
 body{
   color: midnightblue;
 }
 #logo{
+  position: relative;
   float: left;
 }
 #top{
-  /*position: absolute;*/
+  position: relative;
   background-image: url("backtop.jpg");
   height: 78px;
-  width: 70%;
+  width: 100%;
   padding: 10px;
-  float : left;
-  margin-bottom: 10px;
 }
 #gentitle{
   font-family: "Verdana,Arial,sans-serif";
@@ -29,21 +29,19 @@ body{
   margin-bottom:10px;
 
 }
-.contenuImportant{
-  /*float: right;*/
-  clear: left; /*utilisation de clear pour que les blocs ne rentrant pas un dans l'autre*/
-  margin-top: 10px; 
-}
 #topmenu{
-  float:right;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width:65px;
-  line-height: 50%;
+  line-height: 100%;
 }
 #menu{
  float:left;
  width:102px;
 }
 #table{
- float:left;
- margin-left: 40px;
+ float:right;
 }
