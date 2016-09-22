@@ -5,11 +5,13 @@ body{
   float: left;
 }
 #top{
-  position: absolute;
+  /*position: absolute;*/
   background-image: url("backtop.jpg");
   height: 78px;
   width: 70%;
   padding: 10px;
+  float : left;
+  margin-bottom: 10px;
 }
 #gentitle{
   font-family: "Verdana,Arial,sans-serif";
@@ -27,6 +29,11 @@ body{
   margin-bottom:10px;
 
 }
+.contenuImportant{
+  /*float: right;*/
+  clear: left; /*utilisation de clear pour que les blocs ne rentrant pas un dans l'autre*/
+  margin-top: 10px; 
+}
 #topmenu{
   float:right;
   width:65px;
@@ -37,5 +44,6 @@ body{
  width:102px;
 }
 #table{
- float:right;
+ float:left;
+ margin-left: 40px;
 }
