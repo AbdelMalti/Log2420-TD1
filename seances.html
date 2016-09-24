@@ -28,9 +28,9 @@
 		</div>
 
 	</div>
-	<div ID = "bottom">
-		<div id="menu" ng-controller="menuCtrl">
-	      <ul>
+	<div id = "bottom">
+		<div class="menu" ng-controller="menuCtrl">
+	      <ul class = "bottomClass">
 	        <li ng-repeat="o in menu">
 	        <!--o.lien et o.Lien ne font pas la meme chose... so damn case sensitive this javascript XD!-->
 	          <a href="{{o.Lien}}">{{o.Nom}}</a>
@@ -40,14 +40,16 @@
 
 		<div id="table" class="center" ng-controller="seancesCtrl">
 			<table>
-				<tr>
-					<th>Semaines</th>
+				<tr class="topTable">
+					<th colspan="2">Semaines</th>
 					<th>Transparents</th>
 					<th>Documents</th>
 					<th>Évaluations</th>
 				</tr>
 				<tr ng-repeat="val in seances">
+					<td>un chiffre</td>
 					<td ng-bind-html="val.date"></td>
+					
 					<td ng-bind-html="val.transparents"></td>
 					<td ng-bind-html="val.documents"></td>
 					<td ng-bind-html="val.evaluations"></td>

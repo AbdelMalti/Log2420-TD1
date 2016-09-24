@@ -1,6 +1,7 @@
 
 body{
   color: midnightblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #logo{
   position: relative;
@@ -29,6 +30,24 @@ body{
   margin-bottom:10px;
 
 }
+
+
+table {
+    border-collapse: collapse;
+}
+table, th, td{
+      /*display: table-row-group;*/
+    /*vertical-align: middle;*/
+    border: 1px solid midnightblue;
+}
+
+tr, th{
+  border-right: 1pt solid;
+    border-bottom: 2pt solid;
+}
+.topTable{
+  background-color: #f7eecf;
+}
 #topmenu{
   display: inline-block;
   position: absolute;
@@ -38,10 +57,19 @@ body{
   width:65px;
   line-height: 100%;
 }
-#menu{
+.menu{
  float:left;
- width:102px;
+ width: 10%;
 }
 #table{
- float:right;
+  width: : 80%;
+ float:center;
+}
+
+ul.bottomClass{
+  list-style-type: none;
+  border: 1px solid midnightblue;
+  padding-left : 1px;
+  margin-right: 30px;
+  
 }
