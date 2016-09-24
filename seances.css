@@ -58,12 +58,11 @@ tr, th{
   line-height: 100%;
 }
 .menu{
- float:left;
  width: 10%;
+ float: left;
 }
 #table{
   width: : 80%;
- float:center;
 }
 
 ul.bottomClass{
@@ -71,7 +70,7 @@ ul.bottomClass{
   border: 1px solid midnightblue;
   padding-left : 1px;
   margin-right: 30px;
-  
+  background-color: :#f7eecf;
 }
 
 h1,h2 { margin-top: 2ex; color: #034f93;}/*Le  border-Top n'est pas la ou il devrait etre.*/
@@ -83,4 +82,12 @@ h4 { font-weight:bold; font-size:small; }
 #ligneOrange{
   margin-bottom: : 2px;
   border: 1px solid #d2691e;
+}
+
+.opt1{
+  background-color: blue;
+}
+
+.opt5{
+  background-color: yellow;
 }
