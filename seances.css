@@ -10,7 +10,7 @@ body{
 #top{
   position: relative;
   background-image: url("backtop.jpg");
-  height: 75px;
+  height: 56px;
   width: 70%;
   padding: 10px;
 }
@@ -59,7 +59,11 @@ tr, th{
   top: 50%;
   transform: translateY(-50%);
   width:65px;
+  height: 76px;
   line-height: 100%;
+  background-color: #cecab6;
+  align: right;
+  vertical-align: middle;
 }
 .menu{
  width: 10%;
