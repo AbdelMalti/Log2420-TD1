@@ -25,6 +25,10 @@ body{
   font-family: Verdana,Arial,sans-serif;
 }
 
+#print{
+  visibility: hidden;
+}
+
 #title{
   font-size: 150%;
   margin-top: 20px;
