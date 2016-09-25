@@ -66,7 +66,7 @@
 						<th>Évaluations</th>
 					</tr>
 					<tr ng-repeat="val in seances">
-						<td>un chiffre</td>
+						<td>{{$index+1}}</td>
 						<td ng-bind-html="val.date"></td>
 
 						<td ng-bind-html="val.transparents"></td>
