@@ -20,6 +20,11 @@ body{
   margin-left: 113px;
   font-size: medium;
 }
+
+#title, #subtitle, #print{
+  font-family: Verdana,Arial,sans-serif;
+}
+
 #title{
   font-size: 150%;
   margin-top: 20px;
@@ -28,7 +33,6 @@ body{
 #subtitle{
   margin-top: 5px;
   margin-bottom:10px;
-
 }
 
 
@@ -110,3 +114,7 @@ h1 { font-weight:bold; font-size:x-large;}
 h2 { font-weight:bold; font-size:large;}
 h3 { font-weight:bold; font-size:medium; }
 h4 { font-weight:bold; font-size:small; }
+
+#lowMenu{
+  float : left;
+}
