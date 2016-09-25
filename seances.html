@@ -22,7 +22,7 @@
 
 		<div id="topmenu">
 			<a id="print" href="">
-				<img src="printer.png"></img>format imprimable
+				<img src="printer.png"></img>format impression
 			</a>
 		</div>
 
@@ -40,7 +40,7 @@
 	      </ul>
 	      <div id="lowMenu">
 			<a id="print" href="">
-				<img src="printer.png"></img>format imprimable
+				<img src="printer.png"></img>format impression
 			</a>
 		</div>
 		</div>
@@ -70,12 +70,12 @@
 						<th>Évaluations</th>
 					</tr>
 					<tr ng-repeat="val in seances">
-						<td>{{$index+1}}</td>
+						<td id="numWeek">{{$index+1}}</td>
 						<td ng-bind-html="val.date"></td>
 
 						<td ng-bind-html="val.transparents"></td>
 						<td ng-bind-html="val.documents"></td>
-						<td ng-bind-html="val.evaluations"></td>
+						<td id="colEvaluation" ng-bind-html="val.evaluations"></td>
 					</tr>
 				</table>
 			</div>

@@ -10,8 +10,8 @@ body{
 #top{
   position: relative;
   background-image: url("backtop.jpg");
-  height: 78px;
-  width: 100%;
+  height: 75px;
+  width: 70%;
   padding: 10px;
 }
 #gentitle{
@@ -110,11 +110,25 @@ ul.bottomClass{
 }
 
 h1,h2 { margin-top: 2ex; color: #034f93;}/*Le  border-Top n'est pas la ou il devrait etre.*/
-h1 { font-weight:bold; font-size:x-large;}
+h1 { font-weight:bold; font-size:x-large;     /*BORDER-TOP: chocolate 1px solid;*/}
 h2 { font-weight:bold; font-size:large;}
 h3 { font-weight:bold; font-size:medium; }
 h4 { font-weight:bold; font-size:small; }
 
 #lowMenu{
   float : left;
+  font-size: small;
+}
+#topmenu{
+    float : left;
+  font-size: small;
+}
+
+#numWeek{
+  width: 20px;
+  text-align: right;
+}
+
+#colEvaluation{
+  width: 15%;
 }
