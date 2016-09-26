@@ -72,6 +72,8 @@ tr, th{
 .menu{
  width: 150px;
  float: left;
+ position: fixed;
+ margin-top: 20px;
 }
 
 ul.bottomClass{
@@ -161,4 +163,9 @@ h4 { font-weight:bold; font-size:small; }
 #details{
   display: inline-block;
   width: 80%;
+  margin-left: 160px;
+}
+
+.menu-fixed {
+  top: 0;
 }
