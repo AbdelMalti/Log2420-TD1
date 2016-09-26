@@ -11,7 +11,7 @@ body{
   position: relative;
   background-image: url("backtop.jpg");
   height: 56px;
-  width: 70%;
+  width: 98%;
   padding: 10px;
 }
 #gentitle{
@@ -70,7 +70,7 @@ tr, th{
   vertical-align: middle;
 }
 .menu{
- width: 10%;
+ width: 150px;
  float: left;
 }
 
@@ -84,8 +84,9 @@ ul.bottomClass{
 }
 
 #ligneOrange{
-  margin-bottom: : 2px;
   border: 1px solid #d2691e;
+  width:89%;
+  transform: translateY(15px) translateX(-10px);
 }
 
 .menuLink{
@@ -94,9 +95,9 @@ ul.bottomClass{
 }
 
 .opt1, .opt2, .opt3, .opt4, .opt5, .opt6, .opt7, .opt8, .opt9, .opt10, .opt11, .opt12, .opt13{
-    padding-top: 0.33ex;
-    padding-left: 0.5ex;
-    padding-right: 0.5ex;
+  padding-top: 0.33ex;
+  padding-left: 0.5ex;
+  padding-right: 0.5ex;
   }
 .opt1,.opt4, .opt5, .opt7, .opt9, .opt11, .opt12, .opt13{
   background-color: #f7eecf;
@@ -119,7 +120,7 @@ ul.bottomClass{
 }
 
 #table{
-  width: : 80%;
+  width: : 100%;
 }
 
 h1,h2 { margin-top: 2ex; color: #034f93;}/*Le  border-Top n'est pas la ou il devrait etre.*/
@@ -133,15 +134,26 @@ h4 { font-weight:bold; font-size:small; }
   font-size: small;
 }
 #topmenu{
-    float : left;
+  float : left;
   font-size: small;
 }
 
-#numWeek{
+.numWeek{
   width: 20px;
   text-align: right;
 }
 
 #colEvaluation{
   width: 15%;
+}
+
+.line{
+  height:3px;
+  transform: translateY(-5px);
+  width:99%;
+  border:0;
+}
+
+#bottom{
+  transform:translateY(-10px);
 }
