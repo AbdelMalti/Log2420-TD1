@@ -17,7 +17,10 @@ app.controller('menuCtrl', function($scope, $http) {
 });
 
 $( document ).ready(function(){
-	$("#print").click(function(){
-		$("#menu").hide();
+	$( ".print" ).click(function(){
+		$( ".bottomClass" ).addClass( "hidden" );
+		$( "#topmenu" ).addClass( "hidden" );
+		$( "#lowMenu" ).addClass( "hidden" );
+		$( ".print" ).addClass( "hidden" )
 	});
 });

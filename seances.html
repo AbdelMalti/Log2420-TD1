@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8"></meta>
 	<title>seances</title>
-	<link rel="stylesheet" type="text/css" href="seances.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="seances.css">
 	<script src="seances.js"></script>
 </head>
 <body ng-app="app">
@@ -21,11 +21,10 @@
 		</div>
 
 		<div id="topmenu">
-			<a id="print" href="">
+			<a class="print" href="">
 				<img src="printer.png"></img>format impression
 			</a>
 		</div>
-
 	</div>
 
 	<img height="3" width="100%" border="0" src="http://www.groupes.polymtl.ca/log2420/Images/border.png">
@@ -34,15 +33,15 @@
 	      <ul class = "bottomClass">
 	        <li ng-repeat="o in menu" class = "opt{{$index+1}}">
 	        <!--o.lien et o.Lien ne font pas la meme chose... so damn case sensitive this javascript XD!-->
-						<span ng-if="o.Lien != '0'"><a href="{{o.Lien}}">{{o.Nom}}</a></span>
+						<span ng-if="o.Lien != '0'"><a href = "{{o.Lien}}" class = "menuLink">{{o.Nom}}</a></span>
   					<span ng-if="o.Lien == '0'">{{o.Nom}}</span>
 	        </li>
 	      </ul>
-	      <div id="lowMenu">
-			<a id="print" href="">
-				<img src="printer.png"></img>format impression
-			</a>
-		</div>
+		  <div id="lowMenu">
+				<a class="print" href="">
+					<img src="printer.png"></img>format impression
+				</a>
+			</div>
 		</div>
 		<div id = "details">
 			<div>
