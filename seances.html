@@ -69,7 +69,9 @@
 
 				<p>Le détail de chaque séance de cours est fourni semaine par semaine.
 				<br>
-				<a href="http:#{{$index+1}}" ng-repeat="val in seances">{{$index+1}}</a>
+				<span ng-repeat="val in seances">
+					<a href="http:#{{$index+1}}">{{$index+1}}</a>
+				</span>
 				</p>
 			</div>
 			

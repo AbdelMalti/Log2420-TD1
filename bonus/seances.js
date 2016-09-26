@@ -31,7 +31,7 @@ $( document ).scroll(function() {
 	}
 	if($( window ).scrollTop() < 101){
 		$( ".menu" ).removeClass("menu-fixed");
-		$( ".menu-fixed" ).css('top', 0);
+		$( ".menu" ).css('top', 0);
 	}
 	$( ".menu-fixed" ).css('top', $(this).scrollTop() - 120);
 });

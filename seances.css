@@ -42,6 +42,7 @@ body{
 
 table {
     border-collapse: collapse;
+    width:100%;
 }
 table, th, td{
       /*display: table-row-group;*/
@@ -117,10 +118,6 @@ ul.bottomClass{
 
 .menuLink:hover, .opt2 span a:hover{
   color: chocolate;
-}
-
-#table{
-  width: : 100%;
 }
 
 h1,h2 { margin-top: 2ex; color: #034f93;}/*Le  border-Top n'est pas la ou il devrait etre.*/
